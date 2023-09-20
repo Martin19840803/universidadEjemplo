@@ -100,6 +100,11 @@ public class GestiondeAlumnos extends javax.swing.JInternalFrame {
         JBNuevo.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         JBNuevo.setForeground(new java.awt.Color(0, 0, 0));
         JBNuevo.setText("Nuevo");
+        JBNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNuevoActionPerformed(evt);
+            }
+        });
 
         JBEliminar.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         JBEliminar.setForeground(new java.awt.Color(0, 0, 0));
@@ -257,11 +262,15 @@ public class GestiondeAlumnos extends javax.swing.JInternalFrame {
         } catch (NumberFormatException nf) {
             JOptionPane.showMessageDialog(this, "Por favor Ingrese solo numeros");
             limpiarCampo();
-
         
-        
+ 
+  
     }//GEN-LAST:event_JBBuscarActionPerformed
-    }
+                    //BOTON NUEVO
+    private void JBNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNuevoActionPerformed
+        limpiarCampo();
+    }//GEN-LAST:event_JBNuevoActionPerformed
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton JBBuscar;

@@ -25,7 +25,7 @@ public class Inscripciones extends javax.swing.JInternalFrame {
         initComponents();
         editarTabla();
         con = Conexion.conexionDB();
-        LlenarCombos();
+    //    LlenarCombos();
     //    re.RellenarCombos("alumno", "idAlumno" ,JComboBoxSeleccionarunAlumno);
         
     }
@@ -255,11 +255,7 @@ i++) {
         }
   
  
-
-
-
-
-    
+    } 
     
     
     
@@ -296,4 +292,4 @@ i++) {
 
     }
 
-}
+    
